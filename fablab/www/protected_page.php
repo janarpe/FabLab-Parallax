@@ -1,6 +1,6 @@
 <?php
-include_once 'db_connect.php';
-include_once 'functions.php';
+include_once '../include/class/db_connect.php';
+include_once '../include/class/functions.php';
  
 sec_session_start();
 ?>
@@ -20,10 +20,10 @@ sec_session_start();
                 the user, so pages will be able to determine the type of user
                 authorised to access the page.
             </p>
-            <p>Return to <a href="../../www/login.php">login page</a></p>
+            <p>Return to <a href="../../login.php">login page</a></p>
         <?php else : ?>
             <p>
-                <span class="error">You are not authorized to access this page.</span> Please <a href="../../www/login.php">login</a>.
+                <span class="error">You are not authorized to access this page.</span> Please <a href="../../login.php">login</a>.
             </p>
         <?php endif; ?>
     </body>
